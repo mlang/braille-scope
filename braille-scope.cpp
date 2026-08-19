@@ -534,7 +534,8 @@ int main(int argc, char* argv[])
 
       if (a == "--help") {
         return usage();
-      } else if (a == "--fps") {
+      }
+      if (a == "--fps") {
         fps = parse_u32(require_value(i, "--fps"), "--fps");
       } else if (a == "--width") {
         width = parse_u32(require_value(i, "--width"), "--width");
